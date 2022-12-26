@@ -22,6 +22,8 @@ class TestHomePage(BaseClass):
         homepage.submitForm().click()
 
         alertText = homepage.getSuccessMessage().text
+        print(alertText)
+        print("hello world")
 
         assert ("Success" in alertText)
         self.driver.refresh()
